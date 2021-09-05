@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MOS Video Player.exe" version="1.0.0.1" publicKeyToken="885dc680c9edd17a" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="video_player.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MOS Video Player" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MOS Video Player.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>psGRR3MdpuSSncCFKMlqw2BNCttXalWtxT0qOEZJdAQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jtedg2wI7VzE9k8igLQFBJ3RW2uOVoQPM8JaUqKeluc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MOS Video Player.exe" size="147968">
+      <assemblyIdentity name="MOS Video Player" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nhRocxbAATohVLcuGJqs6xB/eDRlz0CQIYT+hqAH38o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MOS Video Player.exe.config" size="820">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dngvfJXzXFiW3TwtJMoBIsd/sHkLlu0sN9iilJMyDdk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="video_player.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6b1fMP2zqemzBe5guMiA4rVngAjEwe3PnhmjJqU/JyA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-G6GEQNI\LoL" issuerKeyHash="9f50339a44fe766bbc355398f78a045371a5a2b4" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>NYVvBAgUCOlR+pK+Thct+AKyjmP3CjOFfN5IsbMqOJk=</DigestValue></Reference></SignedInfo><SignatureValue>ZkRl1UqXNtdxht1CMnQA2TS1HBRJgL0PW+VkWWhgw4MgjaudxL2sHIfy5XC9jYbrBnRGsFbnEVsx7fAuzBnmFrWZk0WRC4lxv7SZGIxwHSJmonmFTIvmmd50Sut4/vlPFR4lUkYzhg7feWs4SBGgQDaTfJUn9eDfr+ox6GmePRs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1rXZvI5k+vpsT1bH4loc97KaBXHOcnEmBjEaEC/TBV8r6+J+Xtegz1DbnYyc5V5FRmz4RSrpiW7Xse7OO73oirTdrlnR8ZJbK+AYyx3s6IvPuOZHZCGGSJKlWXg1hkQkujjAf9t8WsTP3bUadOy5JFIKY1Z7h4kwUDB4cPp8kjU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="99382ab3b148de7c85330af7638eb202f82d174ebe92fa51e9081408046f8535" Description="" Url=""><as:assemblyIdentity name="MOS Video Player.exe" version="1.0.0.1" publicKeyToken="885dc680c9edd17a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-G6GEQNI\LoL</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>BY5tMIgYYA5XP1td2e9/zAnAog0f59eCYlR1vtgnoRc=</DigestValue></Reference></SignedInfo><SignatureValue>PDLlQWIF5eZjnw4oaTrBn3nCuTJc6v/qhYgPBRJfJnCe3XCkbaFqzSHVDwRvsQaYX69GLGpOtPnvjNxojK5FcBb59m2o+Vb0do7nnfQxKuerzuppgYZDQxJ0SRMvizL06T5Z/QLs7acVdggJHsSyD9T+Ej6KYIRyYAIhjFESrz8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1rXZvI5k+vpsT1bH4loc97KaBXHOcnEmBjEaEC/TBV8r6+J+Xtegz1DbnYyc5V5FRmz4RSrpiW7Xse7OO73oirTdrlnR8ZJbK+AYyx3s6IvPuOZHZCGGSJKlWXg1hkQkujjAf9t8WsTP3bUadOy5JFIKY1Z7h4kwUDB4cPp8kjU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQGdWgCEpMNKFHt6sJW34UATANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtAEcANgBHAEUAUQBOAEkAXABMAG8ATDAeFw0yMTA5MDUxMzQxMDdaFw0yMjA5MDUxOTQxMDdaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0ARwA2AEcARQBRAE4ASQBcAEwAbwBMMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWtdm8jmT6+mxPVsfiWhz3spoFcc5ycSYGMRoQL9MFXyvr4n5e16DPUNudjJzlXkVGbPhFKumJbtex7s47veiKtN2uWdHxklsr4BjLHezoi8+45kdkIYZIkqVZeDWGRCS6OMB/23xaxM/dtRp07LkkUgpjVnuHiTBQMHhw+nySNQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAJTUBFx2SKgYHdEQQqMclCewWOaae9/I6YUAuSPH0UJXCL7Zk/5UvCyrHaxNrwZio6C5MneqWcAlmfkF4m6pqOea8SJPXjVbT6TsGMr1bBaoJHbC4PyB11M0JSnxW3gG7HVJkGGaRsCGuVpdoXKY0rYr8uE1MeTOw0fTABbBGSLl</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
