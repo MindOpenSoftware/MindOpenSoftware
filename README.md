@@ -3,6 +3,7 @@
 - 🌱 I’m currently learning Operating System and C++...
 - 💞️ I’m looking to collaborate on someone who want to help me in my stunning project...
 - 📫 How to reach me ... email mind.open.software@gmail.com
+-  IM NOW WORKING ON CODE EDITOR WANNA JOIN ME NOW COME ON AND JOIN JUST COLLABORATE WITH ME !
 LOVE U uwu
 
 <!---
